@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Mustache::Sinatra::VERSION
   spec.authors       = ["Ricardo Mendes"]
   spec.email         = ["rokusu@gmail.com"]
-  spec.homepage      = ""
   spec.summary       = %q{Mustache support for Sinatra applications}
   spec.description   = %q{Mustache support for Sinatra applications}
+  spec.homepage      = "htts://github.com/mustache/mustache-sinatra"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
