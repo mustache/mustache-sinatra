@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["rokusu@gmail.com"]
   spec.summary       = %q{Mustache support for Sinatra applications}
   spec.description   = %q{Mustache support for Sinatra applications}
-  spec.homepage      = "htts://github.com/mustache/mustache-sinatra"
+  spec.homepage      = "https://github.com/mustache/mustache-sinatra"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
