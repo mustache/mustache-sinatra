@@ -1,8 +1,6 @@
 require "mustache/sinatra/version"
 
 class Mustache
-  # Support for Mustache in your Sinatra app.
-  #
   #   require 'mustache/sinatra'
   #
   #   class Hurl < Sinatra::Base

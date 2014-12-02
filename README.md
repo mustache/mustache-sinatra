@@ -1,6 +1,6 @@
 # Mustache::Sinatra
 
-TODO: Write a gem description
+Support for Mustache in your Sinatra app.
 
 ## Installation
 
