@@ -1,4 +1,5 @@
 require 'mustache/sinatra/version'
+require 'mustache'
 require 'mustache/sinatra/helpers'
 
 class Mustache
