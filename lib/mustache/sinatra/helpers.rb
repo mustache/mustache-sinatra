@@ -88,7 +88,7 @@ class Mustache
         options[:namespace] ||= self.class
 
         unless options[:namespace].to_s.include? 'Views'
-          options[:namespace] = options[:namespace].const_get(:Views) rescue Object
+          options[:namespace] = add_views_to_namespace(options[:namespace])
         end
 
         factory = Class.new(Mustache) do
@@ -143,7 +143,12 @@ class Mustache
         klass.template_path = options[:templates] if options[:templates]
         klass
       end
-    end
 
+      def add_views_to_namespace(namespace)
+        namespace.const_get(:Views)
+      rescue NameError
+        namespace.const_set(:Views, Module.new)
+      end
+    end
   end
 end
