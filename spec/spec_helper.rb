@@ -1,3 +1,8 @@
+require 'rack/test'
+require 'sinatra'
+require_relative 'views/layout'
+require_relative 'views/index'
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
@@ -14,6 +19,7 @@ RSpec.configure do |config|
   config.profile_examples = 10
   config.order = :random
   Kernel.srand config.seed
+  config.include Rack::Test::Methods
 
   if config.files_to_run.one?
     config.default_formatter = 'doc'
