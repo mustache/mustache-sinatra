@@ -1,5 +1,7 @@
 # Mustache::Sinatra
 
+[![Build Status](https://travis-ci.org/mustache/mustache-sinatra.svg)](https://travis-ci.org/mustache/mustache-sinatra)
+
 Support for Mustache in your Sinatra app.
 
 ## Installation
