@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rack-test", "~> 0.6"
   spec.add_development_dependency "sinatra", "~> 1.4"
 
-  spec.add_dependency "mustache", "<= 0.99.8"
+  spec.add_dependency "mustache", "~> 1.0"
 end
