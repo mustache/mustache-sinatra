@@ -4,8 +4,9 @@ RSpec.describe 'normal usage' do
   let(:app) {
     Class.new(Sinatra::Application) do
       set :mustache, {
-                     templates: 'spec/views',
-                     views: 'spec/views',
+                     templates: 'views',
+                     views: 'views',
+                     namespace: Object
                    }
 
       get '/' do
